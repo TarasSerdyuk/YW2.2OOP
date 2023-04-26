@@ -34,7 +34,8 @@ public class Griffindor extends Hogwarts {
         this.bravery = bravery;
     }
 
-    public void sumSkills() {
-
+    @Override
+    public String toString() {
+        return "Griffindor{"+ super.toString() + "nobility= " + nobility + ", honor=" + honor + ", bravery=" + bravery + '}';
     }
 }

@@ -3,8 +3,13 @@ public class Puffenduy extends Hogwarts {
     private int loyalty;
     private int honesty;
 
+
     public Puffenduy(String name, String surname, int power, int distance, int oreLoving, int loyalty, int honesty) {
         super(name, surname, power, distance);
+
+        this.oreLoving = oreLoving;
+        this.loyalty = loyalty;
+        this.honesty = honesty;
     }
 
     public int getOreLoving() {
@@ -29,5 +34,10 @@ public class Puffenduy extends Hogwarts {
 
     public void setHonesty(int honesty) {
         this.honesty = honesty;
+    }
+
+    @Override
+    public String toString() {
+        return "Puffenduy{" + super.toString() + "oreLoving=" + oreLoving + ", loyalty=" + loyalty + ", honesty=" + honesty + '}';
     }
 }

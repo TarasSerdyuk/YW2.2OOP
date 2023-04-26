@@ -1,4 +1,4 @@
-public class Hogwarts {
+public abstract class Hogwarts {
     private String name;
     private String surname;
     private int power;
@@ -42,17 +42,10 @@ public class Hogwarts {
     public void setDistance(int distance) {
         this.distance = distance;
     }
-    public void printStudent(Griffindor[] griffindors) {
-        String name = null;
-        String surname = null;
 
-        for (Griffindor griffindor: griffindors) {
-            name = griffindor.getName();
-            surname = griffindor.getSurname();
-
-
-            System.out.println("ФИО: " + name + " " + surname + " " );
-        }
+    @Override
+    public String toString() {
+        return "Имя ='" + name + '\'' + ", Фамилия ='" + surname + '\'' + ", сила магии =" + power + ", расстояние трансгресии =" + distance + ' ';
     }
 }
 
